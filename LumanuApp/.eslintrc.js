@@ -167,7 +167,6 @@ module.exports = {
       'rules': {
         'indent': 'off',
         '@typescript-eslint/indent': ['error', 2],
-        '@typescript-eslint/explicit-module-boundary-types': ['error'],
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/array-type': [2, { 'default': 'array-simple' }],
         '@typescript-eslint/no-unused-vars': ['off'],

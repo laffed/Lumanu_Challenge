@@ -1,8 +1,9 @@
 import React, { VFC } from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native';
 
 import { useNavigationDevTools } from 'hooks';
+
+import { MainBottomTabNavigator } from './MainBottomTab';
 
 
 export const RootNavigator: VFC = () => {
@@ -14,9 +15,7 @@ export const RootNavigator: VFC = () => {
     <NavigationContainer
       ref={ navigationRef }
     >
-      <View>
-        <Text>Dummy</Text>
-      </View>
+      <MainBottomTabNavigator />
     </NavigationContainer>
   );
 };

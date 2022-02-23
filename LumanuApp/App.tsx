@@ -5,7 +5,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RootNavigator } from 'navigation';
 
 
-export const App: VFC = () => {
+const App: VFC = () => {
 
   return (
     <SafeAreaProvider>
@@ -14,3 +14,5 @@ export const App: VFC = () => {
     </SafeAreaProvider>
   );
 };
+
+export default App;
