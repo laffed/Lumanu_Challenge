@@ -2,7 +2,7 @@ import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-import { MainBottomTabRoutes, SearchStackRoutes } from '.';
+import { MainBottomTabRoutes, SearchStackRoutes, AuthStackRoutes } from '.';
 
 
 export type MainBottomTabNavigatorParamsList = {
@@ -25,3 +25,10 @@ export type SearchStackScreenProp<T extends keyof SearchStackNavigatorParamsList
   NativeStackScreenProps<SearchStackNavigatorParamsList, T>,
   MainBottomTabScreenProp<keyof MainBottomTabNavigatorParamsList>
   >
+
+export type AuthStackNavigatorParamsList = {
+  [AuthStackRoutes.LOGIN]: undefined;
+  [AuthStackRoutes.SIGNUP]: undefined;
+}
+export type AuthStackScreenProp<T extends keyof AuthStackNavigatorParamsList> =
+  NativeStackScreenProps<AuthStackNavigatorParamsList, T>;

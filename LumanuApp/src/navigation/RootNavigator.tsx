@@ -4,7 +4,10 @@ import { NavigationContainer, useNavigationContainerRef } from '@react-navigatio
 import { useNavigationDevTools } from 'hooks';
 
 import { MainBottomTabNavigator } from './MainBottomTab';
+import { AuthStackNavigator } from './AuthStackNavigator';
 
+
+const isLoggedIn = false;
 
 export const RootNavigator: VFC = () => {
 
@@ -15,7 +18,8 @@ export const RootNavigator: VFC = () => {
     <NavigationContainer
       ref={ navigationRef }
     >
-      <MainBottomTabNavigator />
+      {isLoggedIn && <MainBottomTabNavigator /> }
+      {!isLoggedIn && <AuthStackNavigator /> }
     </NavigationContainer>
   );
 };

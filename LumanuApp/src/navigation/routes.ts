@@ -9,3 +9,8 @@ export enum SearchStackRoutes {
   OWNER_AND_REPO_SEARCH = 'OWNER_AND_REPO_SEARCH',
   OWNER_REPOS_SEARCH = 'OWNER_REPOS_SEARCH'
 }
+
+export enum AuthStackRoutes {
+  LOGIN = 'LOGIN',
+  SIGNUP = 'SIGNUP'
+}
